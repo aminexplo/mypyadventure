@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+{% set active_page = "add" %}
+{% block app_title %}
+Add
+{% endblock %}
+{% block app_content %}
+<h4>This page is for storing new images with labels...!</h4>
+<br />
+<div class="row">
+    <div class="col-md-4">
+        {{ wtf.quick_form(form) }}
+    </div>
+</div>
+{% endblock %}
